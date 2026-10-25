@@ -1,4 +1,4 @@
-# Storage Estimator - Feature Version
+# Storage Estimator
 ## Purpose
 This Python program estimates a file's storage size in megabytes (MB) and converts it to gigabytes (GB).
 
