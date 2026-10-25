@@ -1,19 +1,55 @@
 # CS-117 Lab 11 — Individual Evidence Sheet
 
-> Fill this in using your real Git/GitHub results. Do not invent hashes, links, reviews, or instructor initials.
+- Repository name: Muhammad Usama
 
-- **Repository name:** [your repository name]
-- **Remote URL:** [your GitHub repository URL]
-- **First commit short hash and message:** [copy from `git log --oneline`]
-- **Status interpretation:** [e.g. explain what `git status` reported at that point]
-- **Diff inspected:** [briefly describe the change shown by `git diff`]
-- **Feature branch:** `feature/gb-output`
-- **Issue:** [issue number/title/link]
-- **Pull Request:** [PR number/title/link]
-- **Specific review comment:** [paste the actual comment from your reviewer]
-- **Conflict diagnosis:** [explain which lines differed in README.md]
-- **Conflict resolution:** [describe the final choice and resolution commit]
-- **Exit task / instructor initials:** [complete with instructor during lab]
+- Remote URL: https://github.com/itxusama669-cyber/CS117-Lab11-Storage-Estimator
+
+- First commit short hash and message: eacba22 Add storage estimator project files
+
+- Status interpretation:The `git status` command showed that I was on the `main` branch and that it was up to date
+ with `origin/main`. It also showed `git-log.png` and `git-status.png` as untracked files, meaning Git had detected
+ the screenshots, but they had not yet been added to version control.
+
+- Diff inspected: The `git show dbc06e1 -- storage_estimator.py` command displayed the changes made in my feature
+ commit. I added an `if-elif-else` structure to display a message when the input size is smaller than, exactly
+ equal to, or larger than 1024 MB (1 GB). The existing MB-to-GB conversion was retained.
+
+- Feature branch: feature/gb-output
+
+- Issue:
+  Issue number: 2
+  Issue title: Add storage size category message
+  Issue Link: https://github.com/itxusama669-cyber/CS117-Lab11-Storage-Estimator/issues/2
+
+- Pull Request:
+  Pull Request number: 1
+  Pull Request title: Add storage size category message
+  Pull Request URL: https://github.com/itxusama669-cyber/CS117-Lab11-Storage-Estimator/pull/1
+  Pull Request Status: Merged
+
+- Specific review comment: "good critical thinking used hats off"
+
+- Conflict diagnosis: File with conflict: README.md
+  Cause of conflict: The README heading was changed differently on the main and feature/gb-output branches.
+  Command used: git merge main
+  Git result: Git reported a content conflict in README.md and stopped the automatic merge.
+
+- Conflict resolution: Resolution: I opened README.md, removed the conflict markers, and kept one final heading: # Storage Estimator.
+  Commands used to finish the resolution:
+  git add README.md
+  git commit -m "Resolve README title conflict"
+  git push origin feature/gb-output
+  Final result: The conflict-resolution commit was pushed to GitHub, and the Pull Request was merged into main.
+
+- Exit task / instructor initials: [complete with instructor during lab]
+
+## Evidence screenshots
+
+### Git commit history
+![Git log screenshot](git-log.png)
+
+### Git status
+![Git status screenshot](git-status.png)
 
 ## Viva preparation
 1. **Git vs GitHub:** Git is version-control software; GitHub hosts repositories online and supports collaboration.

@@ -26,7 +26,9 @@ File size: 2.0000 GB
 The conversion uses 1024 MB = 1 GB. Negative values and non-numeric input are handled with an error message.
 
 ## Author
-Name: [Write your own name]
+Name: Muhammad Usama
+Class: BS CS 16-B
+CMS ID: 602692
 Course: CS-117 Introduction to ICT
 Lab: 11 - Git & GitHub
-Group: [Fill in if applicable]
+
